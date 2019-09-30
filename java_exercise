@@ -69,4 +69,10 @@ Java面试题
 20、String s = "Hello";s = s + "world!";这两行代码执行后，原始的String对象中的内容到底变了没有？
 答:没有.String对象中的内容创建了就占了一个固定的空间,且这个空间中的内容不能被改变,但是指向这块空间的引用变量是可以变得,比如这里s就指向了helloworld.
 
+21. ArrayList和Vector的区别
+答:Vector与ArrayList一样，都是通过数组实现的，不同的是它支持线程的同步，即某一时刻只有一个线程能够写Vector，
+   避免多线程同时写而引起的不一致性，但实现同步需要很高的花费，因此，访问它比访问ArrayList慢。
+   
+22、HashMap和Hashtable的区别
+
 
